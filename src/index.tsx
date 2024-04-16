@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Store from "./store/store";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./AppRouter";
+import NavBar from "./components/NavBar";
 
 interface State {
   store: Store;
@@ -24,7 +27,10 @@ root.render(
       store,
     }}
   >
-    <App />
+    <BrowserRouter>
+      <NavBar />
+      <AppRouter />
+    </BrowserRouter>
   </Context.Provider>
 );
 

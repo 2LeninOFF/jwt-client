@@ -1,0 +1,20 @@
+[
+  {
+    "applyTo": "*",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "http://147.45.102.159:3000"
+      }
+    ]
+  },
+  {
+    "applyTo": "*",
+    "headers": [
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      }
+    ]
+  }
+]
